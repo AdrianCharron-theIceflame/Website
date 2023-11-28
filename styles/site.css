@@ -87,10 +87,10 @@ nav li {
 }
 
 main div.firstParagraph img {
-  block-size: 30em;
+  block-size: 20em;
   inline-size: auto;
-  display: block;
-  margin: 2vb auto;
+  float: inline-end;
+  margin: 1em;
 }
 
 main div.firstParagraph p {
@@ -191,14 +191,6 @@ footer>p {
   main {
     margin-block-end: 3em;
   }
-
-  main div.firstParagraph img {
-    block-size: 20em;
-    inline-size: auto;
-    float: inline-end;
-    margin: 1em;
-  }
-  
   /* Footer */
   footer{
     position: relative;

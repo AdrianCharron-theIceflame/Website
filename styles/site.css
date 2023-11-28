@@ -86,13 +86,6 @@ nav li {
   overflow: auto;
 }
 
-main div.firstParagraph img {
-  block-size: 20em;
-  inline-size: auto;
-  float: inline-end;
-  margin: 1em;
-}
-
 main div.firstParagraph p {
   color: var(--blue);
   margin: 1em;
@@ -191,6 +184,14 @@ footer>p {
   main {
     margin-block-end: 3em;
   }
+
+  main div.firstParagraph img {
+    block-size: 20em;
+    inline-size: auto;
+    float: inline-end;
+    margin: 1em;
+  }
+  
   /* Footer */
   footer{
     position: relative;

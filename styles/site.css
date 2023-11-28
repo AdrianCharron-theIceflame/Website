@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Source+Sans+3&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --titleFontFamily: Aldrich, sans-serif;
+  --fontFamily: "Source Sans 3", sans-serif;
+  --yellow: #ffec11;
+  --blue: #1be7ff;
+  --textColour: #ba2d0b;
+  --grey: #757575;
+  --border: 1px solid black;
+  --mainBorderRadius: 10px;
+}
+
+body {
+  font-family: var(--fontFamily);
+  background-color: black;
+  margin: 0;
+}
+
+/* Above the Fold */
+header {
+  display: flex;
+  flex-flow: row;
+}
+
+header img {
+  position: relative;
+  inset-inline-start: 1px;
+  inset-block-start: 1px;
+  inline-size: 7em;
+  block-size: auto;
+}
+
+h1 {
+  font-family: var(--titleFontFamily);
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.1em;
+}
+
+h1,
+h2 {
+  color: var(--blue);
+  margin: 0;
+  padding-left: 1.5vi;
+}
+
+#topBar > nav {
+  font-family: var(--titleFontFamily);
+  background-color: var(--yellow);
+  border: var(--border);
+  border-radius: 4px;
+  inline-size: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+.notMobile {
+  display: none;
+}
+
+#topBar nav a {
+  text-decoration: none;
+  color: var(--textColour);
+}
+
+/* Main */
+.firstParagraph{
+  overflow: auto;
+}
+
+main div.firstParagraph img {
+  block-size: 20em;
+  inline-size: auto;
+  float: inline-end;
+  margin: 1em;
+}
+
+main div.firstParagraph p {
+  color: var(--blue);
+  margin: 1em;
+  text-align: justify;
+}
+main div.firstParagraph a {
+  font-weight: bold;
+  font-style: oblique;
+  color: var(--blue);
+}
+
+.favArticles div {
+  background-color: var(--yellow);
+  border: var(--border);
+  border-radius: var(--mainBorderRadius);
+  margin-inline: 3vi;
+  margin-block: 5vi;
+  padding: 3vi;
+}
+
+.favArticles div:nth-of-type(1) img {
+  inline-size: auto;
+  block-size: 40vi;
+  margin-inline-start: 26vi;
+}
+
+.favArticles div:nth-of-type(2) img {
+  inline-size: auto;
+  block-size: 40vi;
+  margin-inline-start: 18vi;
+}
+
+.favArticles div:nth-of-type(3) img {
+  inline-size: auto;
+  block-size: 40vi;
+  margin-inline-start: 16vi;
+}
+
+.favArticles img {
+  border: .5vi solid black;
+}
+
+.favArticles div a:nth-of-type(1) {
+  color: black;
+  padding-inline-start: 3vi;
+  font-weight: bold;
+}
+
+.favArticles div a:nth-of-type(2) {
+  color: var(--textColour);
+  padding-inline-start: 4vi;
+  font-family: var(--titleFontFamily);
+  font-size: .8em;
+}
+
+/* The Footer */
+footer {
+  background-color: var(--grey);
+  color: black;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer>p {
+  padding-inline: 4vi;
+}
+
+/* 768px and Above */
+@media (min-width: 768px) {
+  /* Above the Fold */
+  header div {
+    padding: 0;
+    margin: 0;
+  }
+
+  #topBar nav {
+    position: absolute;
+    inset-inline-end: 0;
+    inset-block-start: 0;
+    inline-size: calc(50vi - 3px);
+  }
+
+  #topBar ul li {
+    font-size: 0.9em;
+}
+
+  .notMobile {
+    display: contents;
+  }
+
+  /* Main */
+  main {
+    margin-block-end: 3em;
+  }
+  /* Footer */
+  footer{
+    position: relative;
+  }
+
+  footer nav {
+    position: relative;
+    inset-inline-start: 25vi;
+    inline-size: 50vi;
+    inset-block-start: 0;
+  }
+
+  footer nav ul {
+    margin: 0;
+  }
+
+  address {
+    position: relative;
+    inset-inline-start: 60vi;
+    inline-size: 25vi;
+    text-align: right;
+    font-size: small;
+  }
+
+
+}

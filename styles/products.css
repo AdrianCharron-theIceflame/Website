@@ -1,0 +1,37 @@
+main {
+padding-inline: 10vi;
+}
+
+h3 {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+section {
+    background-color: var(--yellow);
+    border-radius: var(--mainBorderRadius);
+    padding: 1em 5vi;
+    margin-block-end: 5vb;
+}
+
+section > img {
+    block-size: auto;
+    inline-size: 70vi;
+    padding-inline: 3.5vi;
+}
+
+h4 {
+    margin-block-start: 0;
+    font-family: var(--titleFontFamily);
+    color: var(--textColour);
+    font-weight: bold;
+}
+
+h4+p {
+    padding-inline-start: 3vi;
+    border-inline-start: 5px solid var(--textColour);
+}
+
+@media (min-width: 768px) {
+    
+}

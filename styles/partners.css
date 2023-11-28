@@ -1,0 +1,31 @@
+h3 {
+  color: var(--blue);
+  font-size: larger;
+  font-family: var(--titleFontFamily);
+  margin-inline-start: 12vi;
+}
+
+.partnered {
+  background-color: var(--yellow);
+  padding: 0.5em 2vi;
+  margin: 3vi;
+  border-radius: var(--mainBorderRadius);
+}
+
+.partnered > p {
+  padding-inline-start: 4vi;
+  color: var(--textColour);
+  font-weight: bolder;
+}
+
+.partnered section {
+  border-block-start: 2px solid black;
+}
+.partnered section h4 {
+  color: var(--textColour);
+  font-family: var(--titleFontFamily);
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+}

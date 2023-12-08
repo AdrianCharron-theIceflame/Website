@@ -82,16 +82,6 @@ nav li {
 }
 
 /* Main */
-.firstParagraph{
-  overflow: auto;
-}
-
-main div.firstParagraph img {
-  block-size: 20em;
-  inline-size: auto;
-  float: inline-end;
-  margin: 1em;
-}
 
 main div.firstParagraph p {
   color: var(--blue);

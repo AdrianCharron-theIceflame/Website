@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Source+Sans+3&display=swap");
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 :root {
   --titleFontFamily: Aldrich, sans-serif;
@@ -99,7 +99,7 @@ main div.firstParagraph a {
   color: var(--blue);
 }
 
-.favArticles div {
+.favArticles section {
   background-color: var(--yellow);
   border: var(--border);
   border-radius: var(--mainBorderRadius);
@@ -108,19 +108,19 @@ main div.firstParagraph a {
   padding: 3vi;
 }
 
-.favArticles div:nth-of-type(1) img {
+.favArticles section:nth-of-type(1) img {
   inline-size: auto;
   block-size: 40vi;
   margin-inline-start: 26vi;
 }
 
-.favArticles div:nth-of-type(2) img {
+.favArticles section:nth-of-type(2) img {
   inline-size: auto;
   block-size: 40vi;
   margin-inline-start: 18vi;
 }
 
-.favArticles div:nth-of-type(3) img {
+.favArticles section:nth-of-type(3) img {
   inline-size: auto;
   block-size: 40vi;
   margin-inline-start: 16vi;
@@ -130,13 +130,13 @@ main div.firstParagraph a {
   border: .5vi solid black;
 }
 
-.favArticles div a:nth-of-type(1) {
+.favArticles section  h3 a {
   color: black;
   padding-inline-start: 3vi;
   font-weight: bold;
 }
 
-.favArticles div a:nth-of-type(2) {
+.favArticles section > a {
   color: var(--textColour);
   padding-inline-start: 4vi;
   font-family: var(--titleFontFamily);
@@ -189,9 +189,30 @@ footer>p {
   }
 
   /* Main */
-  main {
+  .favArticles {
     margin-block-end: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .favArticles section:nth-of-type(1) img {
+    inline-size: auto;
+    block-size: 10vi;
+    margin-inline-start: auto;
+  }
+  
+  .favArticles section:nth-of-type(2) img {
+    inline-size: auto;
+    block-size: 10vi;
+    margin-inline-start: auto;
+  }
+  
+  .favArticles section:nth-of-type(3) img {
+    inline-size: auto;
+    block-size: 10vi;
+    margin-inline-start: auto;
+  }  
+  
   /* Footer */
   footer{
     position: relative;

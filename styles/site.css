@@ -51,6 +51,12 @@ h2 {
   padding-inline-start: 1.5vi;
 }
 
+#topBar>p {
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
 #topBar > nav {
   font-family: var(--titleFontFamily);
   background-color: var(--yellow);
@@ -161,11 +167,17 @@ footer>p {
     margin: 0;
   }
 
+  #topBar >p {
+    position:absolute;
+    inset-inline-end: 1vi;
+    inset-block-start: 2em;
+  }
+
   #topBar nav {
     position: absolute;
     inset-inline-end: 0;
     inset-block-start: 0;
-    inline-size: calc(50vi - 3px);
+    inline-size: calc(50vi - 17px);
   }
 
   #topBar ul li {

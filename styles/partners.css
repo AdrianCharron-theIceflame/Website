@@ -12,19 +12,19 @@ h3 {
   border-radius: var(--mainBorderRadius);
 }
 
-.partnered > p {
-  padding-inline-start: 4vi;
+.partnered dd {
+  padding-inline-start: 2vi;
   color: var(--textColour);
   font-weight: bolder;
+  margin-block-end: 1em;
 }
 
-.partnered section {
+.partnered dt {
   border-block-start: 2px solid black;
-}
-.partnered section h4 {
   color: var(--textColour);
   font-family: var(--titleFontFamily);
   text-decoration: underline;
+  padding-block-start: 1em;
 }
 
 @media (min-width: 768px) {

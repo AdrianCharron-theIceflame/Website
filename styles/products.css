@@ -52,13 +52,17 @@ h4 + p {
     gap: 3vi;
   }
 
-  .books section:nth-of-type(1) {
+  .books section:nth-of-type(1), .merch section:nth-of-type(1) {
     grid-column: 1/2;
   }
 
-  section > img {
+  .books section > img, .merch section > img {
     block-size: 10vi;
     inline-size: auto;
-    padding-inline: 3.5vi;
+    margin-inline: 3.5vi;
+  }
+
+  section p, section h4 {
+    margin-inline: -3vi;
   }
 }

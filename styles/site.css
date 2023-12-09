@@ -141,13 +141,11 @@ main div.firstParagraph a {
 
 .favArticles section h3 a {
   color: black;
-  padding-inline-start: 3vi;
   font-weight: bold;
 }
 
 .favArticles section > a {
   color: var(--textColour);
-  padding-inline-start: 4vi;
   font-family: var(--titleFontFamily);
   font-size: 0.8em;
 }
@@ -190,7 +188,7 @@ footer > p {
   }
 
   #topBar ul li {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   .notMobile {
@@ -220,7 +218,6 @@ footer > p {
   }
 
   .favArticles section h3 a {
-    padding-inline-start: 0;
   }
 
   /* Footer */

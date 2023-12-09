@@ -112,19 +112,16 @@ main div.firstParagraph a {
 .favArticles section:nth-of-type(1) img {
   inline-size: auto;
   block-size: 40vi;
-  /* margin-inline-start: 26vi; */
 }
 
 .favArticles section:nth-of-type(2) img {
   inline-size: auto;
   block-size: 40vi;
-  /* margin-inline-start: 18vi; */
 }
 
 .favArticles section:nth-of-type(3) img {
   inline-size: auto;
   block-size: 40vi;
-  /* margin-inline-start: 16vi; */
 }
 
 .favArticles img {
@@ -199,19 +196,29 @@ footer > p {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .favArticles section {
+    text-align: initial;
+    /* margin-inline: 3vi; */
+    /* margin-block: 5vi; */
+    padding: 3vi;
+  }  
+
   .favArticles section:nth-of-type(1) img {
     block-size: 15vi;
     margin-inline-start: auto;
+    margin-inline: 3.8vi;
   }
 
   .favArticles section:nth-of-type(2) img {
     block-size: 15vi;
     margin-inline-start: auto;
+    margin-inline: 2vi;
   }
 
   .favArticles section:nth-of-type(3) img {
     block-size: 15vi;
     margin-inline-start: auto;
+    margin-inline: 0;
   }
 
   /* Footer */

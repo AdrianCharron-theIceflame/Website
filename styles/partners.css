@@ -27,10 +27,13 @@ h3 {
 
 .partnered dt {
   border-block-start: 2px solid black;
-  color: var(--textColour);
   font-family: var(--titleFontFamily);
-  text-decoration: underline;
   padding-block-start: 1em;
+}
+
+.partnered dt a {
+  color: var(--textColour);
+
 }
 
 @media (min-width: 768px) {

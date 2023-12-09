@@ -220,7 +220,7 @@ footer > p {
   }
 
   .favArticles section h3 a {
-    padding-inline-start: 1vi;
+    padding-inline-start: 0;
   }
 
   /* Footer */

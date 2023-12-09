@@ -33,5 +33,12 @@ h4+p {
 }
 
 @media (min-width: 768px) {
+
+    .books, .merch {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    
     
 }

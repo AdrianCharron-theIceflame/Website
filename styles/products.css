@@ -1,44 +1,64 @@
 main {
-padding-inline: 10vi;
+  padding-inline: 10vi;
 }
 
 h3 {
-    color: var(--blue);
-    font-weight: bold;
+  color: var(--blue);
+  font-weight: bold;
 }
 
 section {
-    background-color: var(--yellow);
-    border-radius: var(--mainBorderRadius);
-    padding: 1em 5vi;
-    margin-block-end: 5vb;
+  background-color: var(--yellow);
+  border-radius: var(--mainBorderRadius);
+  padding: 1em 5vi;
+  margin-block-end: 5vb;
 }
 
 section > img {
-    block-size: auto;
-    inline-size: 70vi;
-    padding-inline: 3.5vi;
+  block-size: 50vi;
+  inline-size: auto;
+  border: var(--border);
+}
+
+.books section > img {
+  background-color: black;
+  margin-inline: 3.5vi;
+
+}
+
+.merch section > img {
+    margin-inline: 3.5vi;
+    block-size: 43vi;
+
 }
 
 h4 {
-    margin-block-start: 0;
-    font-family: var(--titleFontFamily);
-    color: var(--textColour);
-    font-weight: bold;
+  margin-block-start: 0;
+  font-family: var(--titleFontFamily);
+  color: var(--textColour);
+  font-weight: bold;
 }
 
-h4+p {
-    padding-inline-start: 3vi;
-    border-inline-start: 5px solid var(--textColour);
+h4 + p {
+  padding-inline-start: 3vi;
+  border-inline-start: 5px solid var(--textColour);
 }
 
 @media (min-width: 768px) {
+  .books,
+  .merch {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3vi;
+  }
 
-    .books, .merch {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+  .books section:nth-of-type(1) {
+    grid-column: 1/2;
+  }
 
-    
-    
+  section > img {
+    block-size: 10vi;
+    inline-size: auto;
+    padding-inline: 3.5vi;
+  }
 }

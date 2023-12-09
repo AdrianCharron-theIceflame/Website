@@ -131,9 +131,6 @@ main div.firstParagraph a {
   border: 0.5vi solid black;
 }
 
-.favArticles section h3 {
-}
-
 .favArticles section h3, .favArticles section h3 + a {
   padding: 0;
   margin: 0;
@@ -215,9 +212,6 @@ footer > p {
   .favArticles section:nth-of-type(3) img {
     block-size: 15vi;
     margin-inline-start: auto;
-  }
-
-  .favArticles section h3 a {
   }
 
   /* Footer */

@@ -98,6 +98,14 @@ main div.firstParagraph a {
   font-style: oblique;
   color: var(--blue);
 }
+.img {
+  text-align: center;
+  margin-block-start: 3vi;
+}
+.firstParagraph img {
+  block-size: 75vb;
+  inline-size: auto;
+}
 
 .favArticles section {
   background-color: var(--yellow);
@@ -190,6 +198,17 @@ footer > p {
   }
 
   /* Main */
+
+  .img img {
+    float: inline-end;
+    block-size: 60vb;
+    margin-inline-start: 3vi;
+  }
+
+  .firstParagraph {
+    overflow: auto;
+  }
+
   .favArticles {
     margin-block-end: 3em;
     display: grid;
@@ -198,8 +217,6 @@ footer > p {
 
   .favArticles section {
     text-align: initial;
-    /* margin-inline: 3vi; */
-    /* margin-block: 5vi; */
     padding: 3vi;
   }  
 

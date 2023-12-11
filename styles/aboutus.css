@@ -32,9 +32,17 @@ main p {
 }
 
 @media (min-width: 768px) {
+  h3 {
+    margin-block: 3vi;
+  }
+  
   .team {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  h4 {
+    margin-block: 3vi;
   }
   .teamImg img {
     block-size: 19vi;

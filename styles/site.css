@@ -98,7 +98,7 @@ main div.firstParagraph a {
   font-style: oblique;
   color: var(--blue);
 }
-.img {
+.img, .teamImg {
   text-align: center;
   margin-block-start: 3vi;
 }

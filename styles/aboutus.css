@@ -28,5 +28,11 @@ main p {
 }
 
 @media (min-width: 768px) {
-  
+  .team {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .team img {
+    block-size: 15vi;
+  }
 }

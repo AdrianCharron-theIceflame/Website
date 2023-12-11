@@ -221,6 +221,10 @@ footer > p {
     margin-inline: 0;
   }
 
+  .favArticles section img {
+    border: var(--border);
+  }
+
   /* Footer */
   footer {
     position: relative;

@@ -20,6 +20,10 @@ h4 span {
   text-decoration: underline;
 }
 
+.teamImg img {
+  border-radius: var(--mainBorderRadius);
+}
+
 main p {
   color: var(--blue);
   padding-inline: 2vi;
@@ -32,7 +36,7 @@ main p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .team img {
+  .teamImg img {
     block-size: 19vi;
   }
   main p {

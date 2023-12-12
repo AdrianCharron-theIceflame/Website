@@ -6,7 +6,6 @@ h3 {
   border-radius: 4px;
   color: var(--textColour);
   /* box-shadow: 0 0 5px white, inset 0 0 5px white, 0 0 20px var(--textColour), inset 0 0 20px var(--textColour), 0 0 20px 2px var(--textColour), inset 0 0 20px 2px var(--textColour); */
-
 }
 
 h4 {
@@ -42,7 +41,8 @@ table {
   border-radius: var(--mainBorderRadius);
 }
 
-td, th {
+td,
+th {
   border: var(--border);
   padding-inline: 1vi;
 }
@@ -67,7 +67,7 @@ tr:not(:nth-of-type(1)) {
   h3 {
     margin-block: 3vi;
   }
-  
+
   .team {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -80,10 +80,10 @@ tr:not(:nth-of-type(1)) {
     block-size: 19vi;
   }
   main p {
-    border-inline-start: .5vi solid var(--textColour);
+    border-inline-start: 0.5vi solid var(--textColour);
   }
   table {
-    grid-column: 2/4;
-    inline-size: 50%;  
+    grid-column: span 2;
+    inline-size: 50%;
   }
 }

@@ -12,7 +12,7 @@ h3 {
   border-radius: var(--mainBorderRadius);
 }
 
-.partnered p{
+.partnered p {
   color: var(--textColour);
   font-weight: bolder;
   padding-inline-start: 4vi;
@@ -25,17 +25,16 @@ h3 {
   margin-block-end: 1em;
 }
 
+.partnered dt a {
+  color: var(--textColour);
+}
+
 .partnered dd {
   padding-inline: 2vi;
   color: var(--textColour);
   font-weight: bolder;
   margin-block-end: 1em;
   margin-inline-start: 4vi;
-}
-
-.partnered dt a {
-  color: var(--textColour);
-
 }
 
 .partnered dd a {
@@ -45,4 +44,7 @@ h3 {
 }
 
 @media (min-width: 768px) {
+  .partnered dd {
+    margin-inline-start: 0.5vi;
+  }
 }

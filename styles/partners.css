@@ -18,22 +18,30 @@ h3 {
   padding-inline-start: 4vi;
 }
 
-.partnered dd {
-  padding-inline-start: 2vi;
-  color: var(--textColour);
-  font-weight: bolder;
-  margin-block-end: 1em;
-}
-
 .partnered dt {
   border-block-start: 2px solid black;
   font-family: var(--titleFontFamily);
   padding-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+.partnered dd {
+  padding-inline: 2vi;
+  color: var(--textColour);
+  font-weight: bolder;
+  margin-block-end: 1em;
+  margin-inline-start: 4vi;
 }
 
 .partnered dt a {
   color: var(--textColour);
 
+}
+
+.partnered dd a {
+  color: var(--textColour);
+  font-weight: normal;
+  font-style: oblique;
 }
 
 @media (min-width: 768px) {

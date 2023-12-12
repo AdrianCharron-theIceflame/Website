@@ -12,7 +12,7 @@ h3 {
   border-radius: var(--mainBorderRadius);
 }
 
-.partnered p {
+.partnered h4 {
   color: var(--textColour);
   font-weight: bolder;
   padding-inline-start: 4vi;

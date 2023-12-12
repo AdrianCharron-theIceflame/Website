@@ -47,6 +47,22 @@ td, th {
   padding-inline: 1vi;
 }
 
+tr:nth-of-type(1) {
+  background-color: black;
+  font-size: larger;
+  color: var(--blue);
+  font-family: var(--titleFontFamily);
+}
+
+tr:nth-of-type(even) {
+  background-color: var(--textColour);
+  color: var(--yellow);
+}
+
+tr:not(:nth-of-type(1)) {
+  font-size: large;
+}
+
 @media (min-width: 768px) {
   h3 {
     margin-block: 3vi;

@@ -5,6 +5,8 @@ h3 {
   margin: 5vi 3vi;
   border-radius: 4px;
   color: var(--textColour);
+  /* box-shadow: 0 0 5px white, inset 0 0 5px white, 0 0 20px var(--textColour), inset 0 0 20px var(--textColour), 0 0 20px 2px var(--textColour), inset 0 0 20px 2px var(--textColour); */
+
 }
 
 h4 {
@@ -31,6 +33,20 @@ main p {
   margin-inline: 6vi;
 }
 
+table {
+  color: var(--textColour);
+  border-collapse: collapse;
+  background-color: var(--yellow);
+  text-align: center;
+  margin: auto;
+  border-radius: var(--mainBorderRadius);
+}
+
+td, th {
+  border: var(--border);
+  padding-inline: 1vi;
+}
+
 @media (min-width: 768px) {
   h3 {
     margin-block: 3vi;
@@ -49,5 +65,9 @@ main p {
   }
   main p {
     border-inline-start: .5vi solid var(--textColour);
+  }
+  table {
+    grid-column: 2/4;
+    inline-size: 50%;  
   }
 }

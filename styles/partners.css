@@ -44,6 +44,11 @@ h3 {
 }
 
 @media (min-width: 768px) {
+
+  h3 {
+    margin-inline-start: 5vi;
+  }
+
   .partnered dd {
     margin-inline-start: 0.5vi;
   }

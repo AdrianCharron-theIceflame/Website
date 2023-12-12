@@ -44,6 +44,27 @@ h4 + p {
   border-inline-start: 5px solid var(--textColour);
 }
 
+.books h3 {
+  background-color: var(--yellow);
+  font-size: larger;
+  font-weight: 1000;
+  text-align: center;
+  border-radius: var(--mainBorderRadius);
+  border: 2px solid var(--textColour);
+  inline-size: 65%;
+  margin-inline: auto;
+  margin-block-end: 3em;
+  padding: 0;
+}
+
+.books h3 a {
+  color: var(--textColour);
+}
+
+.books h3 a::after {
+  content: ' >>';
+}
+
 @media (min-width: 768px) {
   .books,
   .merch {
@@ -64,5 +85,8 @@ h4 + p {
 
   section p, section h4 {
     margin-inline: -3vi;
+  }
+  .books h3 {
+    grid-row: 2;
   }
 }

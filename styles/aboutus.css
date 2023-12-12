@@ -47,7 +47,7 @@ th {
   padding-inline: 1vi;
 }
 
-tr:nth-of-type(1) {
+thead tr:nth-of-type(1) {
   background-color: black;
   font-size: larger;
   color: var(--blue);
@@ -61,6 +61,10 @@ tr:nth-of-type(even) {
 
 tr:not(:nth-of-type(1)) {
   font-size: large;
+}
+
+tfoot a {
+  color: var(--textColour);
 }
 
 @media (min-width: 768px) {

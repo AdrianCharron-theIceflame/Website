@@ -92,6 +92,8 @@ main div.firstParagraph p {
   color: var(--blue);
   margin: 1em;
   text-align: justify;
+  border-inline-start: 1vi solid var(--textColour);
+  padding-inline-start: 1vi;
 }
 main div.firstParagraph a {
   font-weight: bold;
@@ -202,11 +204,15 @@ footer > p {
   .img img {
     float: inline-end;
     block-size: 60vb;
-    margin-inline-start: 3vi;
+    margin-inline: 3vi;
   }
 
   .firstParagraph {
     overflow: auto;
+  }
+
+  main div.firstParagraph p {
+    border-inline-start: .5vi solid var(--textColour);
   }
 
   .favArticles {

@@ -6,17 +6,19 @@
 :root {
   --titleFontFamily: Aldrich, sans-serif;
   --fontFamily: "Source Sans 3", sans-serif;
+  --mainBorderRadius: 10px;
   --yellow: #ffec11;
   --blue: #1be7ff;
   --textColour: #ba2d0b;
   --grey: #757575;
   --border: 1px solid black;
-  --mainBorderRadius: 10px;
+  --black: black;
+  --white: white;
 }
 
 body {
   font-family: var(--fontFamily);
-  background-color: black;
+  background-color: var(--black);
   margin: 0;
 }
 
@@ -53,7 +55,7 @@ h2 {
 
 #topBar > p {
   position: relative;
-  color: white;
+  color: var(--white);
   text-align: center;
 }
 
@@ -100,7 +102,8 @@ main div.firstParagraph a {
   font-style: oblique;
   color: var(--blue);
 }
-.img, .teamImg {
+.img,
+.teamImg {
   text-align: center;
   margin-block-start: 3vi;
 }
@@ -135,16 +138,17 @@ main div.firstParagraph a {
 }
 
 .favArticles img {
-  border: 0.5vi solid black;
+  border: 0.5vi solid var(--black);
 }
 
-.favArticles section h3, .favArticles section h3 + a {
+.favArticles section h3,
+.favArticles section h3 + a {
   padding: 0;
   margin: 0;
 }
 
 .favArticles section h3 a {
-  color: black;
+  color: var(--black);
   font-weight: bold;
 }
 
@@ -157,13 +161,13 @@ main div.firstParagraph a {
 /* The Footer */
 footer {
   background-color: var(--grey);
-  color: black;
+  color: var(--black);
   text-align: center;
 }
 
 footer a {
   text-decoration: none;
-  color: black;
+  color: var(--black);
 }
 
 footer > p {
@@ -212,7 +216,7 @@ footer > p {
   }
 
   main div.firstParagraph p {
-    border-inline-start: .5vi solid var(--textColour);
+    border-inline-start: 0.5vi solid var(--textColour);
   }
 
   .favArticles {
@@ -224,7 +228,7 @@ footer > p {
   .favArticles section {
     text-align: initial;
     padding: 3vi;
-  }  
+  }
 
   .favArticles section:nth-of-type(1) img {
     block-size: 15vi;

@@ -48,7 +48,7 @@ th {
 }
 
 thead tr:nth-of-type(1) {
-  background-color: black;
+  background-color: var(--black);
   font-size: larger;
   color: var(--blue);
   font-family: var(--titleFontFamily);

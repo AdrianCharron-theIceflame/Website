@@ -19,7 +19,7 @@ h3 {
 }
 
 .partnered dt {
-  border-block-start: 2px solid black;
+  border-block-start: 2px solid var(--black);
   font-family: var(--titleFontFamily);
   padding-block-start: 1em;
   margin-block-end: 1em;

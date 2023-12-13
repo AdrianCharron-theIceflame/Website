@@ -21,7 +21,7 @@ section > img {
 }
 
 .books section > img {
-  background-color: black;
+  background-color: var(--black);
   margin-inline: 3.5vi;
 
 }

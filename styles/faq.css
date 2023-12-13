@@ -15,7 +15,7 @@ h4 {
 }
 
 h4::before {
-    content: '-  ';
+    content: '- ';
 }
 
 main p {
@@ -24,6 +24,12 @@ main p {
   border-inline-start: 1vi solid var(--textColour);
   margin-inline: 6vi;
 }
+
+p a {
+    font-weight: bold;
+    font-style: oblique;
+    color: var(--blue);
+  }  
 
 .testimonials {
   margin-inline: 1vi;

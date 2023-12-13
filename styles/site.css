@@ -90,6 +90,22 @@ nav li {
 }
 
 /* Main */
+
+.noRecipe {
+  border: 3px solid var(--textColour);
+  background-color: var(--yellow);
+  color: var(--textColour);
+  inline-size: 75%;
+  text-align: center;
+  margin-inline: auto;
+  padding: 1em;
+  border-radius: var(--mainBorderRadius);
+}
+
+.noRecipe a {
+  color: var(--textColour);
+}
+
 main div.firstParagraph p {
   color: var(--blue);
   margin: 1em;

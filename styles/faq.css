@@ -1,15 +1,50 @@
+h3 {
+  background-color: var(--yellow);
+  inline-size: 9rem;
+  text-align: center;
+  margin: 5vi 3vi;
+  border-radius: 4px;
+  color: var(--textColour);
+}
+
+h4 {
+  color: var(--blue);
+  margin: 6vi;
+  font-weight: bolder;
+  letter-spacing: 0.2em;
+}
+
+main p {
+  color: var(--blue);
+  padding-inline: 2vi;
+  border-inline-start: 1vi solid var(--textColour);
+  margin-inline: 6vi;
+}
+
 .testimonials {
-    margin-inline: 1vi;
-    margin-block: 1em;
+  margin-inline: 1vi;
+  margin-block: 1em;
 }
 
 video {
-    inline-size: 100%;
-    block-size: auto;
-    margin: 0 0 1em 0;
+  inline-size: 100%;
+  block-size: auto;
+  margin: 0 0 1em 0;
 }
 
 @media (min-width: 768px) {
+  h3 {
+    margin-block: 3vi;
+  }
+
+  h4 {
+    margin-block: 3vi;
+  }
+
+  main p {
+    border-inline-start: 0.5vi solid var(--textColour);
+  }
+
   video {
     margin-inline: 25%;
     inline-size: 50%;

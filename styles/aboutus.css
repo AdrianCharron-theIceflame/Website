@@ -5,7 +5,6 @@ h3 {
   margin: 5vi 3vi;
   border-radius: 4px;
   color: var(--textColour);
-  /* box-shadow: 0 0 5px white, inset 0 0 5px white, 0 0 20px var(--textColour), inset 0 0 20px var(--textColour), 0 0 20px 2px var(--textColour), inset 0 0 20px 2px var(--textColour); */
 }
 
 h4 {

@@ -11,7 +11,7 @@
   --blue: #1be7ff;
   --textColour: #ba2d0b;
   --grey: #757575;
-  --border: 1px solid black;
+  --border: 1px solid var(--black);
   --black: black;
   --white: white;
 }

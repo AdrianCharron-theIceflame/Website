@@ -58,7 +58,7 @@ tr:nth-of-type(even) {
   color: var(--yellow);
 }
 
-tr:not(:nth-of-type(1)) {
+table:not(:first-child) {
   font-size: large;
 }
 

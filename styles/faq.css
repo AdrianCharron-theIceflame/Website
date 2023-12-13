@@ -33,7 +33,7 @@ main p {
 video {
   inline-size: 100%;
   block-size: auto;
-  margin: 0 0 1em 0;
+  margin: 1em 0;
 }
 
 @media (min-width: 768px) {
@@ -41,7 +41,7 @@ video {
     margin-block: 3vi;
   }
 
-  .question {
+  .question, .testimonials {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }

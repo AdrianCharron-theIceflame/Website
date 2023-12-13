@@ -25,7 +25,7 @@ main p {
   margin-inline: 6vi;
 }
 
-p a {
+main p a {
     font-weight: bold;
     font-style: oblique;
     color: var(--blue);

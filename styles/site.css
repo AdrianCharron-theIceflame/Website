@@ -16,6 +16,17 @@
   --white: white;
 }
 
+@media (prefers-color-scheme: light) {
+  :root{
+    --yellow: #0013ee;
+    --blue: #e41800;
+    --textColour: #45d2f4;
+    --grey: #737373;
+    --black: white;
+    --white: black;
+  }
+}
+
 body {
   font-family: var(--fontFamily);
   background-color: var(--black);

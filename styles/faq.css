@@ -1,4 +1,17 @@
+.testimonials {
+    margin-inline: 1vi;
+    margin-block: 1em;
+}
+
 video {
-margin: auto;
-inline-size: 50%;
+    inline-size: 100%;
+    block-size: auto;
+    margin: 0 0 1em 0;
+}
+
+@media (min-width: 768px) {
+  video {
+    margin-inline: 25%;
+    inline-size: 50%;
+  }
 }

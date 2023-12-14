@@ -14,19 +14,19 @@ section {
   margin-block-end: 5vb;
 }
 
-section > img {
+section img {
   block-size: 50vi;
   inline-size: auto;
   border: var(--border);
 }
 
-.books section > img {
+.books section img {
   background-color: var(--black);
   margin-inline: 3.5vi;
 
 }
 
-.merch section > img {
+.merch section img {
     margin-inline: 3.5vi;
     block-size: 43vi;
 
@@ -35,8 +35,11 @@ section > img {
 h4 {
   margin-block-start: 0;
   font-family: var(--titleFontFamily);
-  color: var(--textColour);
   font-weight: bold;
+}
+
+h4 a {
+  color: var(--textColour);
 }
 
 h4 + p {

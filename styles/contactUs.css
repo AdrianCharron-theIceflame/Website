@@ -14,6 +14,8 @@ form {
   border: var(--border);
   border-radius: var(--mainBorderRadius);
   accent-color: var(--textColour);
+  margin-block: .5em;
+  padding: .5em;
 }
 
 .rating,
@@ -82,12 +84,13 @@ input[type="radio"]:checked, input[type="checkbox"]:checked {
   form {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    row-gap: .5em;
   }
   form>label {
     justify-self: left;
     grid-column: 1/2;
   }
-  form>input, form>select{
+  form>input, form select{
     grid-column: span 2;
   }
   form fieldset {

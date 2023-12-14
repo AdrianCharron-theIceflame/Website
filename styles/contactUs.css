@@ -2,65 +2,94 @@ h3 {
   color: var(--blue);
   font-size: larger;
   font-family: var(--titleFontFamily);
-  margin-inline-start: 12vi;
+  text-align: center;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--yellow);
-    inline-size: 75%;
-    margin-inline: auto;
-    border: var(--border);
-    border-radius: var(--mainBorderRadius);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--yellow);
+  inline-size: 75%;
+  margin-inline: auto;
+  border: var(--border);
+  border-radius: var(--mainBorderRadius);
+  accent-color: var(--textColour);
 }
 
-.rating {
-    display: grid;
-    justify-content: left;
+.rating,
+.comms {
+  display: grid;
+  justify-content: left;
 }
 
-.rating > input {
-    block-size: 1em;
-    margin-block: auto;
+.rating > input,
+.comms > input {
+  block-size: 1em;
+  margin-block: auto;
 }
 
-.rating > label {
-    grid-column: 2;
+.rating > label,
+.comms > label {
+  grid-column: 2;
 }
 
 .reason {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .reason fieldset {
-    display: grid;
-    justify-content: left;
+  display: grid;
+  justify-content: left;
 }
 
 .reason fieldset label {
-    grid-column: 2;
+  grid-column: 2;
 }
 
 fieldset {
-    border: var(--border);
+  border: var(--border);
 }
 
-label, legend {
-    color: var(--textColour);
-    padding: .5em 1em;
+label,
+legend {
+  color: var(--textColour);
+  padding: 0.5em 1em;
 }
 
-textarea, input, option, select {
-    font-family: inherit;
-    background-color: black;
-    color: var(--blue);
+textarea,
+input,
+option,
+select {
+  font-family: inherit;
+  background-color: var(--black);
+  color: var(--blue);
 }
 
+input[type="radio"]:checked, input[type="checkbox"]:checked {
+    accent-color: var(--blue);
+}
 
 @media (min-width: 768px) {
   h3 {
     margin-inline-start: 5vi;
+    text-align: initial;
+  }
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  form>label {
+    justify-self: left;
+    grid-column: 1/2;
+  }
+  form>input, form>select{
+    grid-column: span 2;
+  }
+  form fieldset {
+    grid-column: span 3;
+  }
+  input[type="submit"] {
+
   }
 }

@@ -23,13 +23,11 @@ section img {
 .books section img {
   background-color: var(--black);
   margin-inline: 3.5vi;
-
 }
 
 .merch section img {
-    margin-inline: 3.5vi;
-    block-size: 43vi;
-
+  margin-inline: 3.5vi;
+  block-size: 43vi;
 }
 
 h4 {
@@ -69,7 +67,42 @@ section p {
 }
 
 .books h3 a::after {
-  content: ' >>';
+  content: " >>";
+}
+
+table {
+  color: var(--textColour);
+  border-collapse: collapse;
+  background-color: var(--yellow);
+  text-align: center;
+  margin: auto;
+  border-radius: var(--mainBorderRadius);
+}
+
+td,
+th {
+  border: var(--border);
+  padding-inline: 1vi;
+}
+
+thead tr:nth-of-type(1) {
+  background-color: var(--black);
+  font-size: larger;
+  color: var(--blue);
+  font-family: var(--titleFontFamily);
+}
+
+tr:nth-of-type(even) {
+  background-color: var(--textColour);
+  color: var(--yellow);
+}
+
+table:not(:first-child) {
+  font-size: large;
+}
+
+tfoot a {
+  color: var(--textColour);
 }
 
 @media (min-width: 768px) {
@@ -80,20 +113,28 @@ section p {
     gap: 3vi;
   }
 
-  .books section:nth-of-type(1), .merch section:nth-of-type(1) {
+  .books section:nth-of-type(1),
+  .merch section:nth-of-type(1) {
     grid-column: 1/2;
   }
 
-  .books section > img, .merch section > img {
+  .books section > img,
+  .merch section > img {
     block-size: 10vi;
     inline-size: auto;
     margin-inline: 3.5vi;
   }
 
-  section p, section h4 {
+  section p,
+  section h4 {
     margin-inline: -3vi;
   }
   .books h3 {
     grid-row: 2;
+  }
+  table {
+    grid-column: span 2;
+    inline-size: 50%;
+    justify-self: center;
   }
 }

@@ -14,20 +14,15 @@ form {
   border: var(--border);
   border-radius: var(--mainBorderRadius);
   accent-color: var(--textColour);
-  margin-block: .5em;
-  padding: .5em;
+  margin-block: 0.5em;
+  padding: 0.5em;
 }
 
+/* Labels and Fieldsets */
 .rating,
 .comms {
   display: grid;
   justify-content: left;
-}
-
-.rating > input,
-.comms > input {
-  block-size: 1em;
-  margin-block: auto;
 }
 
 .rating > label,
@@ -50,7 +45,7 @@ form {
 }
 
 label {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 fieldset {
@@ -63,6 +58,13 @@ legend {
   padding: 0.5em 1em;
 }
 
+/* Inputs, Selects and Textarea*/
+.rating > input,
+.comms > input {
+  block-size: 1em;
+  margin-block: auto;
+}
+
 textarea,
 input,
 option,
@@ -72,8 +74,9 @@ select {
   color: var(--blue);
 }
 
-input[type="radio"]:checked, input[type="checkbox"]:checked {
-    accent-color: var(--blue);
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  accent-color: var(--blue);
 }
 
 @media (min-width: 768px) {
@@ -84,17 +87,23 @@ input[type="radio"]:checked, input[type="checkbox"]:checked {
   form {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: .5em;
+    row-gap: 0.5em;
   }
-  form>label {
-    justify-self: left;
+  /* Labels and Fieldsets */
+  form > label {
+    justify-self: start;
     grid-column: 1/2;
-  }
-  form>input, form select{
-    grid-column: span 2;
   }
   form fieldset {
     grid-column: span 3;
+  }
+
+  /* Inputs, Selects, and TextArea */
+  form > input:not([type="submit"]),
+  form select {
+    grid-column: span 2;
+    inline-size: fit-content;
+    justify-self: start;
   }
   input[type="submit"] {
     grid-column: 2/3;

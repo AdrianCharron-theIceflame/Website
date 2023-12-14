@@ -14,7 +14,7 @@ h4 {
   letter-spacing: 0.2em;
 }
 
-h4::before {
+h4::before, .testimonials section p:nth-of-type(2)::before {
     content: '- ';
 }
 
@@ -40,6 +40,11 @@ video {
   inline-size: 100%;
   block-size: auto;
   margin: 1em 0;
+}
+
+.testimonials section p:nth-of-type(2) {
+  color: var(--blue);
+  border: 0;
 }
 
 @media (min-width: 768px) {

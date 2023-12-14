@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="./images/website_logo.png" type="image/x-icon">
     <title>Gamer Foodz - Contact Us</title>
     <meta name="description" content="">
+    <link rel="stylesheet" href="./styles/contactUs.css">
 </head>
 
 <body>
@@ -36,26 +37,45 @@
         <h3>Fill this form to contact us!</h3>
         <form action="#" method="get" name="contactUs" id="contactUs">
             <label for="name">Name: </label><input type="text" name="name" id="name" size="25" maxlength="40"
-                placeholder="Johnathan">
+                placeholder="Johnathan" required>
             <label for="lastName">Last Name: </label><input type="text" name="lastName" id="lastName" size="25"
-                maxlength="40" placeholder="Doeington">
+                maxlength="40" placeholder="Doeington" required>
             <label for="email">Email: </label><input type="email" name="email" id="email"
-                placeholder="JohnathanDoeington@gamerfoodz.com" size="40" maxlength="60">
+                placeholder="JohnathanDoeington@gamerfoodz.com" size="40" maxlength="60" required>
             <label for="foundUs">How did you find us?</label>
-            <select name="foundUs" id="foundUs">
-                
+            <select name="foundUs" id="foundUs" required>
+                <option value="">
+                    --Choose One--
+                </option>
+                <option value="ad">Advertisement</option>
+                <option value="friend">Friend's Suggestion</option>
+                <option value="BCU">Babish Culinary Universe</option>
+                <option value="other">Other</option>
             </select>
-            <fieldset>
-                <legend>Why are you contacting us?</legend>
-                <input type="checkbox" name="question" id="question"><label for="question">Question</label>
-                <input type="checkbox" name="comment" id="comment"><label for="comment">Comment and/or Concern</label>
-                <input type="checkbox" name="suggestGame" id="suggestGame"><label for="suggestGame">Game
-                    Suggestion</label>
-                <input type="checkbox" name="review" id="review"><label for="review">Review</label>
+            <fieldset class="rating">
+                <legend>What do you rate our company out of 5?</legend>
+                <input type="radio" name="rating" id="one" value="one" required><label for="one">1</label>
+                <input type="radio" name="rating" id="two" value="two"><label for="two">2</label>
+                <input type="radio" name="rating" id="three" value="three"><label for="three">3</label>
+                <input type="radio" name="rating" id="four" value="four"><label for="four">4</label>
+                <input type="radio" name="rating" id="five" value="five"><label for="five">5</label>
             </fieldset>
-            <label for="content1">Tell us more about your first choice: </label> <textarea name="content1" id="content1"
-                cols="30" rows="10" placeholder="I loved this:"></textarea>
-
+            <fieldset class="reason">
+                <legend>What are you contacting us for?</legend>
+                <fieldset>
+                    <input type="checkbox" name="review" id="review"><label for="review">Review</label>
+                    <input type="checkbox" name="question" id="question"><label for="question">Question</label>
+                    <input type="checkbox" name="comment" id="comment"><label for="comment">Comment or Concern</label>
+                    <input type="checkbox" name="sugg" id="sugg"><label for="sugg">Recipe or Game Suggestion</label>
+                </fieldset>
+                <label for="message">Let us know some more: </label>
+                <textarea name="message" id="message" cols="25" rows="4" placeholder="This is what I think about this:"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Do you want us to communicate further with you?</legend>
+                <input type="radio" name="comms" id="yes" value="yes" required><label for="yes">Yes, Please!</label>
+                <input type="radio" name="comms" id="no" value="no" checked><label for="no">No, thanks!</label>
+            </fieldset>
             <input type="submit" value="Submit">
         </form>
     </main>

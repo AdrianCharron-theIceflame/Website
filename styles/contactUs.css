@@ -1,0 +1,66 @@
+h3 {
+  color: var(--blue);
+  font-size: larger;
+  font-family: var(--titleFontFamily);
+  margin-inline-start: 12vi;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--yellow);
+    inline-size: 75%;
+    margin-inline: auto;
+    border: var(--border);
+    border-radius: var(--mainBorderRadius);
+}
+
+.rating {
+    display: grid;
+    justify-content: left;
+}
+
+.rating > input {
+    block-size: 1em;
+    margin-block: auto;
+}
+
+.rating > label {
+    grid-column: 2;
+}
+
+.reason {
+    display: flex;
+    flex-direction: column;
+}
+
+.reason fieldset {
+    display: grid;
+    justify-content: left;
+}
+
+.reason fieldset label {
+    grid-column: 2;
+}
+
+fieldset {
+    border: var(--border);
+}
+
+label, legend {
+    color: var(--textColour);
+    padding: .5em 1em;
+}
+
+textarea, input, option, select {
+    font-family: inherit;
+    background-color: black;
+    color: var(--blue);
+}
+
+
+@media (min-width: 768px) {
+  h3 {
+    margin-inline-start: 5vi;
+  }
+}

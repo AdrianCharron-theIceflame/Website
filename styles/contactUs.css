@@ -47,6 +47,10 @@ form {
   grid-column: 2;
 }
 
+label {
+    text-decoration: underline;
+}
+
 fieldset {
   border: var(--border);
 }
@@ -90,6 +94,6 @@ input[type="radio"]:checked, input[type="checkbox"]:checked {
     grid-column: span 3;
   }
   input[type="submit"] {
-
+    grid-column: 2/3;
   }
 }
